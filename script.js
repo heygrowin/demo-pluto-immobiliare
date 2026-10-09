@@ -34,7 +34,7 @@
       var url = '', where = '';
       if (channel === 'whatsapp') { url = 'https://wa.me/' + waNumber(target) + '?text=' + enc(msg); where = 'WhatsApp'; }
       else if (channel === 'mailto') { url = 'mailto:' + target + '?subject=' + enc(form.getAttribute('data-subject') || 'Richiesta dal sito') + '&body=' + enc(msg); where = 'la tua email'; }
-      else if (channel === 'tel') { url = 'tel:' + digits(target); where = 'il telefono'; }
+      else if (channel === 'tel') { url = 'tel:+' + waNumber(target); where = 'il telefono'; }
       if (note) {
         note.textContent = (channel === 'tel')
           ? 'Si apre il telefono per chiamare l’agenzia. Niente viene inviato da solo.'
