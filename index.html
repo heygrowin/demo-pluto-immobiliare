@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Pluto Immobiliare — Agenzia immobiliare a Messina</title>
+<meta name="description" content="Pluto Immobiliare, Via Ugo Bassi 31, Messina: vendita e affitto. Annunci, valutazione della casa e richieste, tutto dal telefono. Demo di proposta.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%276%27%20fill%3D%27%231b2a4a%27%2F%3E%3Ctext%20x%3D%2716%27%20y%3D%2722%27%20font-family%3D%27Arial%27%20font-size%3D%2718%27%20font-weight%3D%27700%27%20fill%3D%27%23fff%27%20text-anchor%3D%27middle%27%3EP%3C%2Ftext%3E%3C%2Fsvg%3E">
+</head>
+<body>
+<a class="skip sr-only" href="#main">Vai al contenuto</a>
+
+<header class="top">
+  <div class="wrap topbar">
+    <a class="brand" href="#top"><span class="mark" aria-hidden="true">P</span><span>Pluto Immobiliare<small>Agenzia immobiliare · Messina</small></span></a>
+    <nav class="nav" aria-label="Sezioni">
+      <a href="#annunci">Annunci</a>
+      <a href="#servizi">Servizi</a>
+      <a href="#valuta">Valuta casa</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow">Via Ugo Bassi 31 · Messina</span>
+    <h1>Casa a Messina? Si guarda tutto dal telefono.</h1>
+    <p class="lead">Il sito attuale non si apre bene sul cellulare. Questa è una proposta: gli annunci con i filtri, la valutazione della tua casa e le richieste, pensati prima di tutto per lo smartphone.</p>
+    <p class="rating-line">
+      <a class="rating-chip" href="https://www.google.com/maps/search/?api=1&amp;query=Pluto%20Immobiliare%2C%20Via%20Ugo%20Bassi%2031%2C%2098123%20Messina" target="_blank" rel="noopener">
+        <span class="stars" aria-hidden="true">★★★★★</span><b>4,6</b> su Google · 87 recensioni →
+      </a>
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-accent" href="#annunci">Vedi gli annunci</a>
+      <a class="btn btn-ghost" href="#valuta">Valuta la tua casa</a>
+    </div>
+  </div>
+</section>
+
+<section id="chi" class="band-soft">
+  <div class="wrap">
+    <h2 class="section-title">Chi siamo</h2>
+    <p class="section-sub">Agenzia immobiliare a Messina: compravendita e locazioni.</p>
+    <div class="ph-banner">La presentazione dell'agenzia verrà scritta con voi — <span class="ph">[testo «chi siamo» da inserire]</span></div>
+  </div>
+</section>
+
+<section id="servizi">
+  <div class="wrap">
+    <h2 class="section-title">Servizi</h2>
+    <div class="svc-grid">
+      <div class="svc-card"><div class="svc-ico" aria-hidden="true">🏷️</div><h3>Vendita</h3><p>Valutazione, pubblicazione dell'annuncio e gestione delle visite.</p></div>
+      <div class="svc-card"><div class="svc-ico" aria-hidden="true">🔑</div><h3>Affitto</h3><p>Locazioni residenziali e commerciali, con i documenti in regola.</p></div>
+      <div class="svc-card"><div class="svc-ico" aria-hidden="true">📍</div><h3>Zone servite</h3><p>Messina (centro, Via Dogali, Via Ugo Bassi, Via Santa Lucia, Via Consolare Pompea, Via Consolare Valeria, Sperone, Paradiso), Milazzo, Saponara, Santa Teresa di Riva.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="annunci" class="band-soft">
+  <div class="wrap">
+    <h2 class="section-title">Annunci</h2>
+    <p class="section-sub">Filtra per tipo, contratto e prezzo. Gli immobili reali verranno caricati qui.</p>
+    <form id="filters" class="filters" aria-label="Filtra annunci">
+      <label>Tipo
+        <select name="type"><option value="">Tutti</option><option value="appartamento">Appartamento</option><option value="villa">Villa / indipendente</option><option value="locale">Locale commerciale</option></select>
+      </label>
+      <label>Contratto
+        <select name="contract"><option value="">Tutti</option><option value="vendita">Vendita</option><option value="affitto">Affitto</option></select>
+      </label>
+      <label>Prezzo
+        <select name="price"><option value="">Qualsiasi</option><option value="lt100">&lt; 100.000 €</option><option value="100-200">100.000 – 200.000 €</option><option value="gt200">&gt; 200.000 €</option></select>
+      </label>
+      <button class="btn btn-ghost btn-sm" type="button" id="filters-reset">Azzera</button>
+    </form>
+    <p class="ph-banner" style="margin-top:16px">Annunci di esempio: <span class="ph">i vostri immobili verranno caricati qui</span>. Nessun indirizzo o prezzo è reale.</p>
+    <div class="listings" id="listings">
+      <article class="listing" data-type="appartamento" data-contract="vendita" data-price="100-200">
+        <div class="lst-photo" aria-hidden="true"><span>foto immobile</span></div>
+        <div class="lst-body"><span class="lst-tag">Vendita</span><h3>Appartamento — [zona]</h3>
+          <ul class="lst-meta"><li>[locali]</li><li>[mq] m²</li><li>[piano]</li></ul>
+          <div class="lst-price ph">[prezzo]</div>
+          <a class="btn btn-sm btn-accent" href="#contatti">Chiedi info</a></div>
+      </article>
+      <article class="listing" data-type="villa" data-contract="vendita" data-price="gt200">
+        <div class="lst-photo" aria-hidden="true"><span>foto immobile</span></div>
+        <div class="lst-body"><span class="lst-tag">Vendita</span><h3>Villa / indipendente — [zona]</h3>
+          <ul class="lst-meta"><li>[locali]</li><li>[mq] m²</li><li>[giardino]</li></ul>
+          <div class="lst-price ph">[prezzo]</div>
+          <a class="btn btn-sm btn-accent" href="#contatti">Chiedi info</a></div>
+      </article>
+      <article class="listing" data-type="locale" data-contract="affitto" data-price="lt100">
+        <div class="lst-photo" aria-hidden="true"><span>foto immobile</span></div>
+        <div class="lst-body"><span class="lst-tag">Affitto</span><h3>Locale commerciale — [zona]</h3>
+          <ul class="lst-meta"><li>[mq] m²</li><li>[vetrina]</li></ul>
+          <div class="lst-price ph">[prezzo] / mese</div>
+          <a class="btn btn-sm btn-accent" href="#contatti">Chiedi info</a></div>
+      </article>
+    </div>
+    <p id="listings-empty" class="muted" hidden>Nessun annuncio di esempio con questi filtri.</p>
+  </div>
+</section>
+
+<section id="valuta">
+  <div class="wrap">
+    <h2 class="section-title">Valuta la tua casa</h2>
+    <p class="section-sub">Compila i dati e premi il tasto: parte la <b>chiamata</b> all'agenzia. Niente viene inviato da solo.</p>
+    <form class="bookform" data-contact data-channel="tel" data-target="090 651 2421" data-intro="Richiesta di valutazione immobile (dalla demo del sito)" novalidate>
+      <div class="row">
+        <label>Tipo immobile *
+          <select name="tipo" data-label="Tipo immobile" required><option value="">—</option><option>Appartamento</option><option>Villa / indipendente</option><option>Locale commerciale</option><option>Terreno</option></select>
+        </label>
+        <label>Zona *<input type="text" name="zona" data-label="Zona" placeholder="quartiere / via" required></label>
+      </div>
+      <div class="row">
+        <label>Superficie (m²)<input type="number" name="mq" data-label="Superficie m²" min="1" inputmode="numeric"></label>
+        <label>Nome *<input type="text" name="nome" data-label="Nome" autocomplete="name" required></label>
+        <label>Telefono *<input type="tel" name="telefono" data-label="Telefono" autocomplete="tel" required></label>
+      </div>
+      <label>Note<textarea name="note" data-label="Note" rows="2" placeholder="Stato, piano, box…"></textarea></label>
+      <button class="btn btn-accent btn-wide" type="submit">Chiama l'agenzia per la valutazione</button>
+      <p class="form-note" role="status" aria-live="polite"></p>
+      <p class="muted small">L'agenzia non ha un WhatsApp o un'email pubblici: il tasto apre la chiamata al <a href="tel:+390906512421">090 651 2421</a>. Appena ci date un numero WhatsApp o un'email, il modulo invierà il riepilogo in automatico.</p>
+    </form>
+  </div>
+</section>
+
+<section id="contatti" class="band-accent">
+  <div class="wrap">
+    <h2 class="section-title">Richiesta su un immobile</h2>
+    <p class="section-sub">Hai visto un annuncio? Compila e premi: parte la chiamata all'agenzia.</p>
+    <form class="bookform" data-contact data-channel="tel" data-target="090 651 2421" data-intro="Richiesta informazioni su un immobile (dalla demo del sito)" novalidate>
+      <div class="row">
+        <label>Immobile di interesse<input type="text" name="immobile" data-label="Immobile" placeholder="es. appartamento zona centro"></label>
+        <label>Vendita o affitto
+          <select name="contratto" data-label="Contratto"><option value="">—</option><option>Vendita</option><option>Affitto</option></select>
+        </label>
+      </div>
+      <div class="row">
+        <label>Nome *<input type="text" name="nome" data-label="Nome" autocomplete="name" required></label>
+        <label>Telefono *<input type="tel" name="telefono" data-label="Telefono" autocomplete="tel" required></label>
+      </div>
+      <label>Messaggio<textarea name="messaggio" data-label="Messaggio" rows="2" placeholder="Cosa cerchi, budget, tempi…"></textarea></label>
+      <button class="btn btn-accent btn-wide" type="submit">Chiama l'agenzia</button>
+      <p class="form-note" role="status" aria-live="polite"></p>
+      <p class="muted small">Il tasto apre la chiamata al <a href="tel:+390906512421">090 651 2421</a>.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div><h4>Pluto Immobiliare</h4><p>Agenzia immobiliare · Via Ugo Bassi 31, 98123 Messina.</p></div>
+    <div><h4>Contatti</h4><ul><li><a href="tel:+390906512421">090 651 2421</a></li><li>Via Ugo Bassi 31, Messina</li></ul></div>
+    <div><h4>Orari</h4><ul><li>Lun–Ven 9–13 · 15:30–19:30</li><li>Sab e Dom chiuso</li></ul></div>
+  </div>
+</footer>
+
+<p class="demo-flag">Demo di proposta, non è il sito ufficiale</p>
+<nav class="callbar" aria-label="Azioni rapide">
+  <a class="c1" href="tel:+390906512421">📞 Chiama</a>
+  <a class="c2" href="https://www.google.com/maps/dir/?api=1&amp;destination=Pluto%20Immobiliare%2C%20Via%20Ugo%20Bassi%2031%2C%2098123%20Messina" target="_blank" rel="noopener">🧭 Indicazioni</a>
+  <a class="c3" href="#valuta">🏠 Valuta</a>
+</nav>
+<script src="script.js"></script>
+</body>
+</html>

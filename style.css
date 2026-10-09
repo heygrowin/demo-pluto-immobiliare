@@ -1,0 +1,105 @@
+/* Pluto Immobiliare — estate agency. Navy + sky + clean white, professional, trustworthy. */
+:root{
+  --navy:#16335c;--navy-dark:#0f2444;--sky:#eaf1fb;--sky2:#dbe7f7;
+  --accent:#1f6fd6;--accent-dark:#1757ab;--gold:#c9972f;
+  --ink:#1d2733;--muted:#5f6b7a;--line:#d7e0ec;--white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Segoe UI",system-ui,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55;-webkit-text-size-adjust:100%}
+.wrap{width:100%;max-width:1060px;margin:0 auto;padding:0 18px}
+img{max-width:100%;display:block}
+a{color:var(--accent-dark)}
+h1,h2,h3,h4{margin:0 0 .4em;line-height:1.2}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.skip:focus{position:static;width:auto;height:auto;clip:auto;display:inline-block;padding:8px;background:var(--gold)}
+
+.top{position:sticky;top:0;z-index:50;background:var(--navy);color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.14)}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 18px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:1.05rem}
+.brand small{display:block;font-weight:500;font-size:.72rem;color:#b9cced;letter-spacing:.02em}
+.mark{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:9px;background:var(--gold);color:#3a2a06;font-weight:900;flex:0 0 auto}
+.nav{display:flex;gap:4px;flex-wrap:wrap;margin:0;padding:0;list-style:none}
+.nav a{color:#fff;text-decoration:none;font-weight:700;font-size:.9rem;padding:9px 11px;border-radius:8px;min-height:40px;display:inline-flex;align-items:center}
+.nav a:hover,.nav a:focus{background:rgba(255,255,255,.15)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:48px;padding:12px 20px;border-radius:9px;font-weight:800;text-decoration:none;cursor:pointer;border:2px solid transparent;font-size:1rem;font-family:inherit}
+.btn-accent{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-accent:hover{background:var(--accent-dark);border-color:var(--accent-dark)}
+.btn-ghost{background:#fff;color:var(--navy);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--accent)}
+.btn-sm{min-height:40px;padding:8px 14px;font-size:.88rem}
+.btn-wide{width:100%}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+
+section{padding:44px 0}
+.band-soft{background:var(--sky)}
+.band-accent{background:var(--navy);color:#fff}
+.band-accent .section-sub,.band-accent a{color:#cfe0f6}
+.band-accent .section-title{color:#fff}
+.section-title{font-size:1.65rem;color:var(--navy)}
+.section-sub{color:var(--muted);margin:0 0 20px;max-width:62ch}
+
+.hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-dark) 100%);color:#fff;padding:54px 0 48px}
+.eyebrow{display:inline-block;background:var(--gold);color:#3a2a06;font-weight:800;font-size:.76rem;padding:5px 12px;border-radius:999px;letter-spacing:.04em;text-transform:uppercase}
+.hero h1{font-size:2.1rem;margin-top:14px;max-width:18ch;color:#fff}
+.lead{font-size:1.08rem;color:#cfe0f6;max-width:56ch;margin:12px 0 0}
+.rating-line{margin:20px 0 0}
+.rating-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.26);border-radius:999px;padding:8px 15px;text-decoration:none;color:#fff;font-size:.95rem;min-height:44px}
+.rating-chip b{color:var(--gold)}
+.stars{color:var(--gold);letter-spacing:1px}
+
+.ph{color:var(--accent-dark);font-style:italic;font-weight:600}
+.ph-banner{background:var(--sky2);border:1px dashed var(--accent);border-radius:9px;padding:12px 16px;font-size:.95rem}
+.band-accent .ph{color:#ffd98a}
+
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px}
+.svc-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}
+.svc-ico{font-size:1.6rem}
+.svc-card h3{font-size:1.15rem;color:var(--navy);margin:8px 0 6px}
+.svc-card p{margin:0;color:var(--muted)}
+
+.filters{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px}
+.filters label{display:flex;flex-direction:column;gap:4px;font-weight:700;font-size:.85rem;color:var(--navy);flex:1 1 150px;min-width:0}
+.filters select{font:inherit;padding:10px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--ink);min-height:44px}
+.filters .btn{flex:0 0 auto}
+
+.listings{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:16px;margin-top:4px}
+.listing{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.lst-photo{background:repeating-linear-gradient(45deg,#dde7f4,#dde7f4 14px,#cfdcef 14px,#cfdcef 28px);min-height:150px;display:flex;align-items:center;justify-content:center}
+.lst-photo span{background:rgba(255,255,255,.88);padding:5px 12px;border-radius:999px;color:var(--muted);font-weight:700;font-size:.8rem}
+.lst-body{padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.lst-tag{align-self:flex-start;background:var(--sky2);color:var(--accent-dark);font-weight:800;font-size:.72rem;padding:3px 9px;border-radius:999px}
+.lst-body h3{font-size:1.08rem;color:var(--navy);margin:0}
+.lst-meta{list-style:none;display:flex;flex-wrap:wrap;gap:6px 14px;margin:0;padding:0;color:var(--muted);font-size:.86rem}
+.lst-price{font-weight:800;font-size:1.05rem}
+.lst-body .btn{margin-top:4px}
+
+.bookform{max-width:680px}
+.bookform .row{display:flex;gap:14px;flex-wrap:wrap}
+.bookform label{display:flex;flex-direction:column;gap:5px;font-weight:700;color:#fff;margin-bottom:14px;flex:1 1 160px;font-size:.92rem}
+.bookform input,.bookform select,.bookform textarea{font:inherit;padding:12px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--ink);min-height:48px;width:100%}
+.bookform input:focus,.bookform select:focus,.bookform textarea:focus{outline:3px solid var(--gold);border-color:var(--gold)}
+#valuta .bookform label{color:var(--navy)}
+#valuta .bookform .muted{color:var(--muted)}
+.form-note{display:none;border-radius:8px;padding:12px 14px;margin:6px 0 10px;font-weight:600}
+.form-note.show{display:block}
+.form-note.ok{background:#fff;color:var(--ink);border-left:5px solid var(--gold)}
+.form-note.err{background:#fdecea;color:#b4231a;border-left:5px solid #e0624f}
+.band-accent .bookform .muted{color:#c3d4ec}
+
+footer{background:var(--navy-dark);color:#cfe0f6;padding:34px 0}
+.foot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:22px}
+footer h4{color:#fff;font-size:1rem}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{padding:3px 0;color:#b9cced}
+footer a{color:#ffd98a}
+footer .ph{color:#ffd98a}
+.muted{color:var(--muted)}.small{font-size:.86rem}
+
+.demo-flag{position:fixed;left:0;right:0;bottom:56px;background:var(--navy-dark);color:#cfe0f6;text-align:center;font-size:.72rem;padding:5px 10px;z-index:59;margin:0;border-top:1px solid rgba(255,255,255,.12)}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:1px;background:var(--line)}
+.callbar a{flex:1;text-align:center;padding:14px 4px;text-decoration:none;font-weight:800;color:#fff;min-height:56px;display:flex;align-items:center;justify-content:center;gap:5px;font-size:.92rem}
+.callbar .c1{background:var(--accent)}.callbar .c2{background:var(--navy)}.callbar .c3{background:var(--gold);color:#3a2a06}
+body{padding-bottom:112px}
+@media(min-width:821px){.callbar{display:none}.demo-flag{position:static;bottom:auto}body{padding-bottom:0}}
